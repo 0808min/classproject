@@ -37,6 +37,7 @@ public class Member {
 		
 		in.nextLine();
 		
+		
 		System.out.print("별명을 입력해주세요. >>>");
 		nickName = in.nextLine();
 		
@@ -56,8 +57,10 @@ public class Member {
 		
 		System.out.println("자바 책의 보유여부 : " +hasBook);
 		
+		
 	
 	}
+	
 	
 	
 	
