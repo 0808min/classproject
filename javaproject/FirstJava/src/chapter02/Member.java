@@ -41,11 +41,9 @@ public class Member {
 		nickName = in.nextLine();
 		
 		System.out.print("키 정보를 입력해주세요. >>>");
-		
 		height = in.nextDouble();
 		
 		System.out.print("책 보유여부를 입력해주세요. >>>");
-		
 		hasBook = in.nextBoolean();
 		
 		System.out.println("저의 이름은 " + name + "입니다.");
