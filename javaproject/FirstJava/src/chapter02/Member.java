@@ -44,9 +44,19 @@ public class Member {
 		
 		height = in.nextDouble();
 		
-		System.out.println("책 보유여부를 입력해주세요. >>>");
+		System.out.print("책 보유여부를 입력해주세요. >>>");
 		
-		hasBook = in.nextBoolean()
+		hasBook = in.nextBoolean();
+		
+		System.out.println("저의 이름은 " + name + "입니다.");
+		
+		System.out.println("나이는 " +age + "세 입니다.");
+		
+		System.out.println("별명은 " +nickName + "입니다.");
+		
+		System.out.println("키는 " +height + "cm 입니다.");
+		
+		System.out.println("자바 책의 보유여부 : " +hasBook);
 		
 	
 	}

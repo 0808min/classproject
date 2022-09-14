@@ -14,7 +14,7 @@ public class Ss {
 		height = 174.3;
 		hasBook = false;
 		
-		System.out.println("저의 이름은" + name "입니다."");
+		System.out.println("저의 이름은" + name);
 	}
 	
 	/*
