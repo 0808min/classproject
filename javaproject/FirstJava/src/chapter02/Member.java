@@ -49,13 +49,13 @@ public class Member {
 		
 		System.out.println("저의 이름은 " + name + "입니다.");
 		
-		System.out.println("나이는 " +age + "세 입니다.");
+		System.out.println("나이는 " + age + "세 입니다.");
 		
-		System.out.println("별명은 " +nickName + "입니다.");
+		System.out.println("별명은 " + nickName + "입니다.");
 		
-		System.out.println("키는 " +height + "cm 입니다.");
+		System.out.println("키는 " + height + "cm 입니다.");
 		
-		System.out.println("자바 책의 보유여부 : " +hasBook);
+		System.out.println("자바 책의 보유여부 : " + hasBook);
 		
 		
 	
