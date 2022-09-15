@@ -31,7 +31,8 @@ public class Calculator {
 		
 		System.out.println("원의 둘레 : " + circum(rad));
 		System.out.println("원의 넓이 : " + area(rad));
-
+ // 더하기 add 뺴기 substract 곱하기 multifly 나누기 divide 둘레 circum 넓이 area
+		
 	}
 	
 	
@@ -77,3 +78,4 @@ public class Calculator {
 	}
 	
 }
+
