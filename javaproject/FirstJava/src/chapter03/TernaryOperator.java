@@ -33,18 +33,15 @@ public class TernaryOperator {
 		String result = num2%2 == 1 ? "홀수 입니다" : "짝수 입니다";  //"홀수" "짝수"
 			
 		System.out.println("num1의 값은" + result);
-		
 		int num3 = -10;
 		
 		// 양수 음수 0 판단해서 결과 메세지를 출력하는 코드를 작성해보자
 		// 먼저 0을 판단
 		String msg1	= num3>0 ? "양수입니다" : num3 == 0 ? "0입니다" : "음수입니다";    // "0입니다", "양수 입니다", "음수입니다"
-		
 		System.out.println("변수 num3은 " + msg1);
 		
 		// 절대값
 		int resultNum = num3>0 ? num3 : num3==0 ? 0 : -num3;
-		
 		System.out.println("num3의 절대값은 " + resultNum);
 
 
