@@ -11,7 +11,7 @@ public class TernaryOperator {
 		chk = age>19 ? true : false;
 		
 		
-		System.out.println("성인 판별값 : " + chk);
+		System.out.println("대상자 판별 : " + chk);
 		
 		String msg = age>19 ? "성인입니다" : "미성년입니다";
 		System.out.println(msg);
