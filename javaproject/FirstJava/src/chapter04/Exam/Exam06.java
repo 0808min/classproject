@@ -12,13 +12,11 @@ public class Exam06 {
 		
 		int sum = 0;
 		
-		
 		while(num<100) {
 			//System.out.println(num);
 			sum += num;
 			num++;
 		}
-		
 		System.out.println("while 문을 이용한 1~99 까지의 합 : " + sum);
 		
 		sum = 0;
@@ -28,7 +26,6 @@ public class Exam06 {
 			sum += num;
 			//System.out.println(num);
 		}
-		
 		System.out.println("for문을 이용한 1~99 까지의 합 : " + sum);
 		
 		//System.out.println(num);
@@ -43,7 +40,6 @@ public class Exam06 {
 			
 			num++;
 		} while(num<100);
-		
 		System.out.println("do while문을 이용한 1~99 까지의 합 : " + sum);
 		
 	}
