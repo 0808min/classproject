@@ -46,7 +46,6 @@ public class Member {
 
 		// 나이
 		int age = curYear - birthYear + 1;
-
 		System.out.println("나이 : " + age);
 
 		if (age >= 20) {
@@ -81,7 +80,6 @@ public class Member {
 
 		// 나이 계산
 		int age = currYear - birthYear + 1;
-
 		System.out.println("나이 : " + age);
 
 		if (age < 15 || age >= 65) {
