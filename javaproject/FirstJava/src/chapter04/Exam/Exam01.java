@@ -16,6 +16,7 @@ public class Exam01 {
 				System.out.println(i + " : " + result + "\n");
 			}
 			
+			
 		}
 		
 
