@@ -58,6 +58,7 @@ public class IfTest3 {
 		} /*else {
 			result = "F";
 		}*/
+	
 		
 		System.out.println("학점 : " + result);
 
