@@ -36,7 +36,7 @@ public class Exam02 {
 		}
 		
 		System.out.println("최초 합이 1000이 넘아가는 값 : " + sum);
-		System.out.println("최초 합이 1000이 넘어갈 때 값 : " + num);
+		System.out.println("최초 합이 1000이  : " + num);
 		
 
 	}
