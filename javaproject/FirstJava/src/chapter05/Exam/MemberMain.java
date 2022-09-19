@@ -13,7 +13,7 @@ public class MemberMain {
 		Member sp2 = new Member("민", "01075471554");
 		
 		sp1.showInfo();
-		System.out.println("________________");
+		System.out.println("--------------------");
 		sp2.showInfo();
 	
 
