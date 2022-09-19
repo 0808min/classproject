@@ -13,8 +13,15 @@ public class SmartPhoneMain {
 	
 	SmartPhone sp2 = new SmartPhone("GREEN", 6.9f, "애플", 7);
 	
-	sp1.showInfo(); 
+	sp2.showInfo(); 
 	
 	SmartPhone sp3 = new SmartPhone();
+	
+	SmartPhone sp4 = new SmartPhone("APPLE, 50f");
+	
+	sp4.showInfo(); 
+	
+	SmartPhone sp5 = new SmartPhone("Samsung");
+	sp5.showInfo(); 
 
 }
