@@ -20,8 +20,8 @@ public class SmartPhone {
 	// 속성 => 변수
 	
 	String color; // 인스턴스 변수, 초기화 생략 가능 = 인스턴스 생성시에 초기값으로 할당
-	float size; 
-	String company; 
+	float size;  // 0.0
+	String company; // null
 	int volumeSize;  // 0
 	
 	// 전화걸기
@@ -35,7 +35,7 @@ public class SmartPhone {
 		volumeSize++;
 	
 	}
-	// volume 낮추기
+	// volume 낮추기 
 	void volumeDown() {
 		System.out.println("볼륨을 낮춥니다.");
 		volumeSize--;
@@ -43,7 +43,7 @@ public class SmartPhone {
 	
 	void showInfo() {
 		System.out.println("폰정보");
-		System.out.println("제조사 : ;" + company);
+		System.out.println("제조사 : " + company);
 		System.out.println("색상 : " + this.color); // 인스턴스의 맴버를 가르키는 키워드 : this
 		System.out.println("사이즈 : " + size);
 		System.out.println("볼륨크기 : " + volumeSize);
