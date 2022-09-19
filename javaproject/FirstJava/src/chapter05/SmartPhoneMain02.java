@@ -26,7 +26,7 @@ public class SmartPhoneMain02 {
 		sp1.volumeUp();
 		sp1.volumeUp();
 		
-		System.out.println();
+		System.out.println(); 
 		
 		sp2.company = "SAMSUNG";
 		sp2.color = "BLACK";
