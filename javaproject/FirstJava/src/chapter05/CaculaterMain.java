@@ -26,6 +26,12 @@ public class CaculaterMain {
 		System.out.println("num1 + num2 = " + cal.add(num1, num2));
 		System.out.println("num1 * num2 = " + cal.multifly(num1, num2));
 		
+		System.out.println("------------------------");
+		System.out.println("오버로딩 테스트");
+		System.out.println("num1 + num2 = " + cal.add(1, 2));
+		System.out.println("num1 + num2 = " + cal.add(1L, 2L));
+		System.out.println("num1 + num2 = " + cal.add(1F, 2F));
+		
 		
 	}
 

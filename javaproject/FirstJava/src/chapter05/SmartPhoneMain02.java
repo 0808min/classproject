@@ -35,6 +35,7 @@ public class SmartPhoneMain02 {
 		sp2.volumeUp();
 		sp2.volumeUp();
 		sp2.volumeUp();
+		System.out.println();
 		
 		System.out.println("각 인스턴스 설정 후 데이터 출력");
 		sp1.showInfo();
@@ -68,11 +69,9 @@ public class SmartPhoneMain02 {
 		System.out.println("매개변수를 참조변수로 정의해서 메소드 내부에서 객체참조");
 		sp.showInfo();
 		
-	
 	}
+	
+	
+	
 		
-
-		
-		
-
 }
