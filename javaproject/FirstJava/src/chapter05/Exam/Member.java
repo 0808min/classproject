@@ -35,6 +35,7 @@ public class Member {
 		System.out.println("학과 : " + major + "입니다.");
 		System.out.println("학년 : " + lv + "입니다.");
 		System.out.println("이메일 : " + email + "입니다.");
+		System.out.println("주소 : " + address + "입니다.");
 
 //	③ 모든 정보를 저장하도록 하는 생성자와 생일과 주소는 저장하지 않을 수 있는 생성자를 정의
 
