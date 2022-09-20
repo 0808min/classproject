@@ -85,7 +85,7 @@ public class Contact {
 	}
 
 	public void tell() {
-		System.out.println("연락처 정보 ------------");
+		System.out.println(" ------data------");
 		System.out.println("이름 : " + this.name);
 		System.out.println("전화번호 : " + this.phonenumber);
 		System.out.println("E-mail : " + this.email);

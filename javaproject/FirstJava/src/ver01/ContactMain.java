@@ -32,8 +32,6 @@ public class ContactMain {
 			System.out.print("그룹을 입력해 주세요 >> ");
 			data.setGroup(sc.nextLine());
 			
-			data = new Contact(data.getName(), data.getPhoneNumber(), data.getEmail(), data.getAddress(), data.getBirthday(),
-					data.getGroup());
 
 			data.tell();
 
@@ -43,17 +41,6 @@ public class ContactMain {
 				break;
 			}
 			
-			data.setName("가나다");
-			data.setPhoneNumber("010-9999-8888");
-			data.setEmail("abcdefg@gmail.com");
-			data.setAddress("서울시 강동구");
-			data.setBirthday("2022-09-20");
-			data.setGroup("미지정");
-
-			data = new Contact(data.getName(), data.getPhoneNumber(), data.getEmail(), data.getAddress(), data.getBirthday(),
-					data.getGroup());
-
-			data.tell();
 
 		}
 
