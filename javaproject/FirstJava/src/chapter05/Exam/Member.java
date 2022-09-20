@@ -6,26 +6,26 @@ public class Member {
 	String name;
 	String phoneNumber;
 	String major;
-	String lv;
+	String level;
 	String email;
 	String birthDay;
 	String address;
 
 //	② 위에서 정의한 정보를 출력하는 메소드 정의
 
-	Member(String name, String phoneNumber, String major, String lv, String email, String birthDay, String address) {
+	Member(String name, String phoneNumber, String major, String level, String email, String birthDay, String address) {
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.major = major;
-		this.lv = lv;
+		this.level = level;
 		this.email = email;
 		this.birthDay = birthDay;
 		this.address = address;
 
 	}
 
-	Member(String name, String phoneNumber, String major, String lv, String email) {
-		this(name, phoneNumber, major, lv, email, null, null);
+	Member(String name, String phoneNumber, String major, String level, String email) {
+		this(name, phoneNumber, major, level, email, null, null);
 	}
 
 	void showInfo() {
@@ -33,7 +33,7 @@ public class Member {
 		System.out.println("이름 : " + name + "입니다.");
 		System.out.println("전화번호 : " + phoneNumber + "입니다.");
 		System.out.println("학과 : " + major + "입니다.");
-		System.out.println("학년 : " + lv + "입니다.");
+		System.out.println("학년 : " + level + "입니다.");
 		System.out.println("이메일 : " + email + "입니다.");
 		System.out.println("주소 : " + address + "입니다.");
 

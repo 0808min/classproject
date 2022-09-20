@@ -9,8 +9,8 @@ public class MemberMain {
 		
 		
 		
-		Member sp1 = new Member("박민", "01075471556", "패션", "4", "min0808mini@naver.com", "910808","서울시");
-		Member sp2 = new Member("박민", "01075471556");
+		Member me1 = new Member("박민", "01075471556", "패션", "4", "min0808mini@naver.com", "910808","서울시");
+		Member me2 = new Member("박민", "01075471556");
 		
 		sp1.showInfo();
 		System.out.println("--------------------");
