@@ -1,5 +1,8 @@
 package chapter05.Test;
 
+import java.util.Date;
+import java.util.Scanner;
+
 public class Candy {
 
 	static int width = 100;
@@ -13,7 +16,10 @@ public class Candy {
 	}
 
 	public static void main(String[] args) {
-		
+
+		Scanner sc = null;
+	    java.util.Date date = null;
+
 //		인스턴스 800개 생성시 -> 변수 2400개 생성
 //		인스턴스 800개 생성시 -> 변수 800 + 2개 생성
 
