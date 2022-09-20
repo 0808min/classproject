@@ -10,7 +10,7 @@ public class Member {
 	String email;
 	String birthDay;
 	String address;
-
+ 
 //	② 위에서 정의한 정보를 출력하는 메소드 정의
 
 	Member(String name, String phoneNumber, String major, String level, String email, String birthDay, String address) {
