@@ -9,7 +9,6 @@ public class Singleton {
 //	private 
 
 	private Singleton() {
-
 	}
 
 //	2. 사용할 수 있는 인스턴스 생성
