@@ -15,7 +15,7 @@ public class ArrayTest1 {
 
 //		10명의 국어점수를 저장하는 배열을 선언하고 생성
 
-		boolean[] korScore = new boolean[10];
+		int[] korScore = new int[10];
 
 //		배열의 사이즈를 가지고 있는 length
 		System.out.println("배수 요소 개수 : " + korScore.length);
@@ -25,11 +25,39 @@ public class ArrayTest1 {
 //		index=> 0~9
 
 		for (int i = 0; i < korScore.length; i++) {
+			int temp = korScore[i];
 			
-			boolean temp = korScore[i];
-			System.out.println(i + " : " + temp);
+			
+			korScore[0] = 70;
+			korScore[1] = 90;
+			korScore[2] = 80;
+			korScore[3] = 60; 
+			korScore[4] = 40;
+			korScore[5] = 30;
+			korScore[6] = 50;
+			korScore[7] = 50;
+			korScore[8] = 80;
+			korScore[9] = 80;
+			
+									
+			
+//			System.out.println(i + " : " + temp);
+			
+			int sum = 0;
+			
+			sum = korScore[0]+
+			
+			for (int i = 0; i < korScore.length; i++) {
+
+				int sum += korScore[i];
+				System.out.println("총점 : " + sum);
+				System.out.println("반 평균 : " + (float)sum/korScore.length);
+
+			}
 
 		}
+
+		
 
 	}
 
