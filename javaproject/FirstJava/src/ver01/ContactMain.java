@@ -16,37 +16,36 @@ public class ContactMain {
 
 		Contact data = new Contact();
 
+		Scanner sc = new Scanner(System.in);
+
 		while (true) {
 
-			Scanner sc = new Scanner(System.in);
-			
 			System.out.print("이름을 입력해 주세요 >> ");
 			data.setName(sc.nextLine());
-			
+
 			System.out.print("전화번호를 입력해 주세요 >> ");
 			data.setPhoneNumber(sc.nextLine());
-			
+
 			System.out.print("이메일을 입력해 주세요 >> ");
 			data.setEmail(sc.nextLine());
-			
+
 			System.out.print("주소를 입력해 주세요 >> ");
 			data.setAddress(sc.nextLine());
-			
+
 			System.out.print("생일을 입력해 주세요 >> ");
 			data.setBirthday(sc.nextLine());
-			
+
 			System.out.print("그룹을 입력해 주세요 >> ");
 			data.setGroup(sc.nextLine());
-			
 
 			data.tell();
 
 			System.out.print("계속 진행 1, 종료 0 입력해주세요 >>>");
+
 			if (Integer.parseInt(sc.nextLine()) == 0) {
 				sc.close();
 				break;
 			}
-			
 
 		}
 

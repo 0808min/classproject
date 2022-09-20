@@ -95,4 +95,10 @@ public class Contact {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Contact [name=" + name + ", phonenumber=" + phonenumber + ", email=" + email + ", address=" + address
+				+ ", birthday=" + birthday + ", group=" + group + "]";
+	}
+
 }
