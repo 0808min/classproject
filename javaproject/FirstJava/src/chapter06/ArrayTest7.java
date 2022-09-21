@@ -36,7 +36,7 @@ public class ArrayTest7 {
 		players[randomIndex] = temp;
 		
 		System.out.println(players[0]);
-		System.out.println(players[randomIndex]);
+		System.out.println(players[1]);
 		System.out.println();
 
 		// index : 0~4
