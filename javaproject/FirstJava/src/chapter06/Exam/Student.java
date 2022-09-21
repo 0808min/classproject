@@ -18,9 +18,7 @@ public class Student {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	
 
 	public int getKorScore() {
 		return korScore;
@@ -45,6 +43,7 @@ public class Student {
 	public void setMatScore(int matScore) {
 		this.matScore = matScore;
 	}
+	
 	
 //	총점을 구해서 반환하는 메소드
 	public int sum() {

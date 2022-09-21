@@ -1,5 +1,7 @@
 package chapter06.Exam;
 
+import chapter06.Exam.Student;
+
 public class StudentMain {
 
 	public static void main(String[] args) {
@@ -33,11 +35,11 @@ public class StudentMain {
 
 		}
 		
-		System.out.println("------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		System.out.printf("과목총점 \t %d \t %d \t %d \n", korTotalScore, engTotalScore, matTotalScore);
 		System.out.printf("과목평균 \t %f \t %f \t %f \n", korTotalScore/10f, engTotalScore/10f, 
 				matTotalScore/10f);
-		System.out.println("------------------------------------------------");
+		System.out.println("-------------------------------------------------");
 
 	}
 
