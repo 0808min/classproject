@@ -35,7 +35,7 @@ public class StudentMain {
 		
 		System.out.println("------------------------------------------------");
 		System.out.printf("과목총점 \t %d \t %d \t %d \n", korTotalScore, engTotalScore, matTotalScore);
-		System.out.printf("과목평균 \n%f \\t %f \\t %f \n", korTotalScore/10f, engTotalScore/10f, 
+		System.out.printf("과목평균 \t %f \t %f \t %f \n", korTotalScore/10f, engTotalScore/10f, 
 				matTotalScore/10f);
 		System.out.println("------------------------------------------------");
 
