@@ -1,6 +1,6 @@
 package chapter06;
 
-public class ArrayTest {
+public class ArrayTest3 {
 
 	public static void main(String[] args) {
 
@@ -26,38 +26,34 @@ public class ArrayTest {
 
 		for (int i = 0; i < korScore.length; i++) {
 			int temp = korScore[i];
-			
-			
-			korScore[0] = 70;
-			korScore[1] = 90;
-			korScore[2] = 80;
-			korScore[3] = 60; 
-			korScore[4] = 40;
-			korScore[5] = 30;
-			korScore[6] = 50;
-			korScore[7] = 50;
-			korScore[8] = 80;
-			korScore[9] = 80;
-			
-									
-			
 //			System.out.println(i + " : " + temp);
-			
-			int sum = 0;
-			
-			sum = korScore[0]+
-			
-			for (int i = 0; i < korScore.length; i++) {
+		}
+		korScore[0] = 70;
+		korScore[1] = 90;
+		korScore[2] = 80;
+		korScore[3] = 60;
+		korScore[4] = 40;
+		korScore[5] = 30;
+		korScore[6] = 50;
+		korScore[7] = 50;
+		korScore[8] = 80;
+		korScore[9] = 80;
 
-				int sum += korScore[i];
-				System.out.println("총점 : " + sum);
-				System.out.println("반 평균 : " + (float)sum/korScore.length);
+		System.out.println();
 
-			}
+	public static void sum(int[] arr) {
+		
+	}
+		int sum = 0;
+
+		for (int i = 0; i < arr.length; i++) {
+
+			sum += arr[i];
+
+			System.out.println("총점 : " + sum);
+			System.out.println("반 평균 : " + (float) sum / korScore.length);
 
 		}
-
-		
 
 	}
 
