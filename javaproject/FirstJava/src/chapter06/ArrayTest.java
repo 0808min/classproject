@@ -1,6 +1,6 @@
 package chapter06;
 
-public class ArrayTest1 {
+public class ArrayTest {
 
 	public static void main(String[] args) {
 
