@@ -37,16 +37,16 @@ public class StudentMain {
 		System.out.println("-----------------------------------------------------");
 		
 		System.out.printf("과목 총점:\t" + korTotal + "\t"+ 
-		                                engTotal + "\t"+ 
-				                        mathTotal + " \n");
+		                                 engTotal + "\t"+ 
+				                         mathTotal + " \n");
 		
 		System.out.printf("과목 평균:\t%.2f\t%.2f\t%.2f\n",korTotal / 10f, 
-				                                        engTotal / 10f, 
-				                                        mathTotal / 10f);
+				                                         engTotal / 10f, 
+				                                         mathTotal / 10f);
 		
 		System.out.printf("전체 평균:\t" + (float)(korTotal + 
-				                                engTotal + 
-				                                mathTotal) / 30 + "\n");
+				                                 engTotal + 
+				                                 mathTotal) / 30 + "\n");
 	}
 
 }

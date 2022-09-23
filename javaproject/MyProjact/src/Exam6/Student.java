@@ -65,8 +65,10 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", korScore=" + korScore + ", engScore=" + engScore + ", matScore=" + matScore
-				+ "]";
+		return "Student [name=" + name + 
+				      ", korScore=" + korScore  + 
+				      ", engScore=" + engScore + 
+				      ", matScore=" + matScore + "]";
 	}
 
 }
