@@ -1,4 +1,4 @@
-package ver01;
+package ver02;
 
 class Contact {
 
@@ -99,6 +99,12 @@ class Contact {
 	public String toString() {
 		return "Contact [name=" + name + ", phonenumber=" + phonenumber + ", email=" + email + ", address=" + address
 				+ ", birthday=" + birthday + ", group=" + group + "]";
+	}
+	
+	public static void main(String[] args) {
+		
+		Contact contact = new Contact();
+		
 	}
 
 }
