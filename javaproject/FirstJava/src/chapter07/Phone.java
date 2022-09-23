@@ -4,11 +4,11 @@ public class Phone {
 
 	// 전화번호
 	String phoneNumber;
-	
+
 	Phone() {
 		this.phoneNumber = "010-4777-7878";
 	}
-	
+
 	Phone(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}

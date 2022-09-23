@@ -15,8 +15,8 @@ public class SmartPhone3 extends Phone {
 	@Override
 	void call() {
 		super.call();
-
 		System.out.println("이어팟을 이용해서 통화합니다.");
+		System.out.println("현재 사용중인 모델은 : " + model);
 //		System.out.println("하위 클래스에서 재 정의");
 	}
 
@@ -35,9 +35,11 @@ public class SmartPhone3 extends Phone {
 		Phone phone2 = new SmartPhone2("010-1111-1111", "android");
 		Phone phone3 = new SmartPhone();
 //		조상타입의 참조변수 선언은 조상타입의 맴버만 사용하겠다를 정의
-		
+
 		System.out.println(phone.phoneNumber);
 		phone.call();
+//		System.out.println(phone.model);
+//		phone.playMusic();
 
 	}
 
