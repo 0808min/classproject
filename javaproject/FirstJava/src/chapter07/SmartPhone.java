@@ -19,7 +19,7 @@ public class SmartPhone extends Phone {
 
 	SmartPhone(String phoneNumber, String model) {
 		super(phoneNumber);
-		this.model = model;
+		this.model = "model";
 	}
 
 	void play() {
