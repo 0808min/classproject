@@ -19,9 +19,9 @@ public class Exam1 {
 		}
 
 		System.out.println("성적표");
-		System.out.println("====================================");
+		System.out.println("===========================================");
 		System.out.println("국어\t영어\t수학\t총점\t평균");
-		System.out.println("====================================");
+		System.out.println("===========================================");
 
 		int korTotal = 0;
 		int engTotal = 0;
@@ -57,7 +57,7 @@ public class Exam1 {
 			System.out.println();
 		}
 		
-		System.out.println("-----------------------------------------------");
+		System.out.println("============================================");
 		System.out.print(korTotal + "\t" + engTotal + "\t" + matTotal + "\t");
 		System.out.println();
 		System.out.print((float) korTotal / scores.length + "\t" + (float) engTotal / scores.length + "\t"

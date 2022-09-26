@@ -32,24 +32,28 @@ public class ArrayTest4 {
 			
 		for(int i=0; length; i++) {
 			fot(int j=0; length; j++)
-				System.out.println("arr["+i+"]["+j+"]="+arr[i][j]+"\t");	
-		}
-		}
-	
+				System.out.println("arr["+i+"]["+j+"]="+arr[i][j]+"\t");
+			
+			
 		
+		}
+
 //		2차원 배열의 초기화
+		
 		int[][] scores = {
 				{11,12,13},
 				{21,22,23},
 				{31,32,33},
 				{41,42,43}
-		};
-		
-		for(int i=0; i<scores.length; i++) {
-			for(int j=0; j<scores[i].length; j++)
-				System.out.println(scores[i][j] + "\t");
 		}
 
+	for(
+			int i = 0;i<scores.length;i++)
+			{
+				for (int j = 0; j < scores[i].length; j++)
+					System.out.println(scores[i][j] + "\t");
+			}
 	}
-
 }
+
+	
