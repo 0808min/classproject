@@ -1,10 +1,10 @@
 package chapter08.Phone;
 
-public abstract class SmartPhone3 extends Computer implements Phone {
+public abstract class SmartPhone3 extends Computer implements SmartDevice {
 
 	boolean power;
 
-	public SmartPhone(String account) {
+	public SmartPhone3(String account) {
 		super(account);
 		this.power = false;
 		
@@ -35,7 +35,7 @@ public abstract class SmartPhone3 extends Computer implements Phone {
 	
 	public static void main(String[] args) {
 		
-		SmartPhone phone = new SmartPhone("mini@naver.com") {
+		SmartPhone3 phone = new SmartPhone3("mini@naver.com") {
 			phone.call();
 			Phone.calculator();
 			
