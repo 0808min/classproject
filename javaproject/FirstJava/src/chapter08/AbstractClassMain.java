@@ -15,6 +15,8 @@ public class AbstractClassMain {
 		abstractClass = newClass; // 다형성
 
 		abstractClass.abstractMethod();
+		
+		newClass.printData();
 
 	}
 
