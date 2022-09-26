@@ -1,6 +1,6 @@
 package chapter08.Phone;
 
-public abstract class SmartPhone extends Computer implements Phone {
+public abstract class SmartPhone3 extends Computer implements Phone {
 
 	boolean power;
 
@@ -27,6 +27,9 @@ public abstract class SmartPhone extends Computer implements Phone {
 	@Override
 	public void turnOff() {
 		// TODO Auto-generated method stub
+		
+		
+		
 		
 	}
 	
