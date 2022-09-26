@@ -4,56 +4,34 @@ public class ArrayTest4 {
 
 	public static void main(String[] args) {
 
-//		2차원 배열 : 1차원 배열의 집합.
-//		 
-//		생성할때
-//		 
-//		int[][] arr
-//		new int[][]
+//		2차원배열 : 1차원배열의 집합
+//		int[][] arr 
+//		new int[3][4]
 
 		int[][] arr = new int[2][3];
 
-//		arr은 (요소개수가 4개인 1차원 배열) 3개를 가지는 배열 인스턴스를 가르킨다
-//		1차원 배열의 사이즈는 4
+//		arr은 (요수개수가 4개인 1차원배열) 3개를 가지는 배열 인스턴스를 가르킨다
+//		1차원 배열의 사이즈는 4개
 
 		System.out.println("2차원 배열의 사이즈 : " + arr.length);
 
 		System.out.println("첫번째 1차원 배열의 사이즈 : " + arr[0].length);
-		System.out.println("두번째 1차원 배열의 사이즈 : " + arr[1].length);
-
-//		배열 요소의 참조
+		System.out.println("두번쨰 1차원 배열의 사이즈 : " + arr[1].length);
 
 		arr[0][0] = 11;
 		arr[0][1] = 12;
 		arr[0][2] = 13;
 		arr[1][0] = 21;
-		arr[2][0] = 22;
-		arr[3][0] = 23;
-			
-		for(int i=0; length; i++) {
-			fot(int j=0; length; j++)
-				System.out.println("arr["+i+"]["+j+"]="+arr[i][j]+"\t");
-			
-			
-		
-		}
+		arr[1][1] = 22;
+		arr[1][2] = 23;
 
-//		2차원 배열의 초기화
-		
-		int[][] scores = {
-				{11,12,13},
-				{21,22,23},
-				{31,32,33},
-				{41,42,43}
-		}
-
-	for(
-			int i = 0;i<scores.length;i++)
-			{
-				for (int j = 0; j < scores[i].length; j++)
-					System.out.println(scores[i][j] + "\t");
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print("arr["+i+"]["+j+"] = " + arr[i][j]);
 			}
-	}
-}
+			System.out.println();
+		}
 
-	
+	}
+
+}

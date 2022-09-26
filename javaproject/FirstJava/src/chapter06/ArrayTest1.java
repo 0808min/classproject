@@ -31,13 +31,13 @@ public class ArrayTest1 {
 		korScore[0] = 70;
 		korScore[1] = 90;
 		korScore[2] = 80;
-		korScore[3] = 60;
+		korScore[3] = 65;
 		korScore[4] = 40;
-		korScore[5] = 30;
+		korScore[5] = 34;
 		korScore[6] = 50;
-		korScore[7] = 50;
+		korScore[7] = 51;
 		korScore[8] = 80;
-		korScore[9] = 80;
+		korScore[9] = 83;
 
 		System.out.println();
 
@@ -46,11 +46,11 @@ public class ArrayTest1 {
 		for (int i = 0; i < korScore.length; i++) {
 
 			sum += korScore[i];
-			
-			System.out.println("총점 : " + sum);
-			System.out.println("반 평균 : " + (float) sum / korScore.length);
 
 		}
+
+		System.out.println("총점 : " + sum);
+		System.out.println("반 평균 : " + (float) sum / korScore.length);
 
 	}
 

@@ -42,6 +42,7 @@ class Person {
 		
 //		Integer.parseInt("문자열"); => int 정수 반환
 		
+		
 //		나이구하기 : 올해년도 - 태어난년도
 		
 //		int curYear = Calender.getInstace().get(Calender.YEAR);
