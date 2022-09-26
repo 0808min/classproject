@@ -16,4 +16,5 @@ public abstract class Phone {
 
 //	추상 메소드로 정의
 	abstract void turnOn();
+	
 }
