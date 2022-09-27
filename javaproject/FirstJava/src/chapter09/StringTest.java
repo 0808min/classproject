@@ -14,7 +14,10 @@ public class StringTest {
 		
 		System.out.println(str1.equals(str3));
 		
-		
+//		특정 타입의 데이터 -> 문자열 String 타입으로 변경
+		String str4 = ""+1;
+		String str5 = String.valueOf(false);
+		System.out.println(str5);
 	}
 
 }
