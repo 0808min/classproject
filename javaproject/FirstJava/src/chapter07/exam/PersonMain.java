@@ -17,17 +17,16 @@ public class PersonMain {
 		f.printInfo();
 		System.out.println();
 		f.printSchoolInfo();
-		
+
 		Person p1 = m;
 		Person p2 = f;
-		
+
 //		p1.hi(); // hi() 는 Person 클래스의 맴버가 아니기떄문에 ㅎ출 불가
 //		p2.printSchoolInfo(); printSchoolInfo(); 는 Person 클래스의 맴버가 아니기떄문에 ㅎ출 불가
 		System.out.println();
 		System.out.println("-------------------------------------");
-		 
+
 		p2.printInfo();
-	
 
 	}
 
