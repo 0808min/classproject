@@ -3,7 +3,7 @@ package chapter08;
 public abstract class Phone {
 
 	String phoneNumber;
-	boolean power;
+	boolean power;// false, 전원
 
 	public Phone(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
@@ -11,10 +11,9 @@ public abstract class Phone {
 	}
 
 	void call() {
-		System.out.println("전화 걸기");
+		System.out.println("전화 걸기!");
 	}
 
-//	추상 메소드로 정의
+	// 추상메소드로 정의
 	abstract void turnOn();
-	
 }
