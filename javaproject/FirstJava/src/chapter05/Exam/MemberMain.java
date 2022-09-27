@@ -3,22 +3,28 @@ package chapter05.Exam;
 import chapter05.SmartPhone;
 
 public class MemberMain {
-
+	
 	public static void main(String[] args) {
 		
+		Member m1 = new Member(
+				"Son", // 
+				"010-1111-2222", 
+				"축구", 
+				1, 
+				"son@gmail.com", 
+				20000101, 
+				"런던"
+				);
+		m1.showMemberInfo();
 		
-		
-		
-		Member me1 = new Member("박민", "01075471556", "패션", "4", "min0808mini@naver.com", "910808","서울시");
-		Member me2 = new Member("민", "01075471551");
-		
-		me1.showInfo();
-		System.out.println("--------------------");
-		me2.showInfo();
-	
-
-
-
+		Member m2 = new Member(
+				"손흥민", // 
+				"010-9999-7777", 
+				"체육", 
+				4, 
+				"sonKing@gmail.com"
+				);
+		m2.showMemberInfo();
 	}
 
 }
