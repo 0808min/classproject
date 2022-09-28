@@ -2,7 +2,7 @@ package chapter10;
 
 import java.util.Scanner;
 
-public class ExceptionTest4 {
+public class ExceptionTest3 {
 
 	public static void main(String[] args) {
 
