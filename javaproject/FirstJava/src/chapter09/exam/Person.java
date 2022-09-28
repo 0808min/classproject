@@ -29,7 +29,7 @@ public class Person {
 	public static void main(String[] args) {
 
 		Person p1 = new Person("min", "910808");
-		Person p2 = new Person("jin", "930705");
+		Person p2 = new Person("min", "910808");
 		System.out.println(p1.equals(p2));
 
 	}

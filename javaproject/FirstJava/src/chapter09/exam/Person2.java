@@ -39,7 +39,7 @@ public class Person2 {
 		Person p3 = new Person("min", "930705");
 		
 		System.out.println("p1과 p2는 같은 사람인가? => " + p1.equals(p2));
-		System.out.println("p1과 p2는 같은 사람인가? => " + p1.equals(p3));
+		System.out.println("p1과 p3는 같은 사람인가? => " + p1.equals(p3));
 		
 	}
 
