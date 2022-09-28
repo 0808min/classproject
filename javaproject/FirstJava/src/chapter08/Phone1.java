@@ -1,11 +1,11 @@
 package chapter08;
 
-public abstract class Phone {
+public abstract class Phone1 {
 
 	String phoneNumber;
 	boolean power;// false, 전원
 
-	public Phone(String phoneNumber) {
+	public Phone1(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 		this.power = false;
 	}

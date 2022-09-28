@@ -44,7 +44,7 @@ public class LocalDateTest {
 		LocalTime time = LocalTime.of(15, 30, 35);
 		System.out.println(time);
 		
-		LocalDataTime localDateTime = LocalDataTime.of(2022, 10, 11, 17, 05);
+		LocalDateTime localDateTime = LocalDateTime.of(2022, 10, 11, 17, 05);
 		System.out.println(localDateTime);
 		
 		

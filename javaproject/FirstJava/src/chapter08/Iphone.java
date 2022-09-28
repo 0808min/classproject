@@ -1,6 +1,6 @@
 package chapter08;
 
-public class Iphone extends Phone {
+public class Iphone extends Phone1 {
 
 	public Iphone(String phoneNumber, boolean power) {
 		super(phoneNumber);
