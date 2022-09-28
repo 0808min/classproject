@@ -13,6 +13,14 @@ public class Person4Main {
 		long days = ChronoUnit.MONTHS.between(brithDay, now);
 		System.out.println(days);
 		
+		LocalDate cDay = LocalDate.of(2022, 12, 25);
+		
+		long days2 = ChronoUnit.DAYS.between(now, cDay);
+		System.out.println(cDay);
+		
+		LocalDate dDay = now.plusDays(88);
+		System.out.println(dDay);
+		
 	}
 
 }
