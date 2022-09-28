@@ -12,8 +12,8 @@ public class SystemTest {
 		System.out.println(startTime);
 		System.out.println(sTime);
 
-		for (int i = 0; i < 1000000000; i++) {
-			for (int j = 0; j > 1000000000; j++) {
+		for (int i = 0; i < 100000000; i++) {
+			for (int j = 0; j > 100000000; j++) {
 
 				int n1 = 1;
 				int n2 = 10;
