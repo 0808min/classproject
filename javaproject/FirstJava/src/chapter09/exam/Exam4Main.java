@@ -3,7 +3,7 @@ package chapter09.exam;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class Person4Main {
+public class Exam4Main {
 	
 	public static void main(String[] args) {
 		

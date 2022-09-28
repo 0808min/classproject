@@ -2,7 +2,7 @@ package chapter09.exam;
 
 import java.util.Scanner;
 
-public class Person3Main {
+public class Exam3Main {
 
 	public static void main(String[] args) {
 

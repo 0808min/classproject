@@ -1,6 +1,6 @@
 package chapter09.exam;
 
-public class Person2Main {
+public class Exam2Main {
 
 	public static void main(String[] args) {
 
