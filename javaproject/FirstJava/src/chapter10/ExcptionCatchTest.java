@@ -34,6 +34,9 @@ public class ExcptionCatchTest {
 
 			
 		}
+		
+//		try{} finally{}, try{} catch{}, try{} catch{} finally{}
+		
 		System.out.println("프로그램을 처리 완료.");
 
 	}
