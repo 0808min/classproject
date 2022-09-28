@@ -4,7 +4,7 @@ public class StringBufferTest {
 
 	public static void main(String[] args) {
 		
-		// StringBuffer , StringBuilder
+		// StringBuffer, StringBuilder
 
 		StringBuffer sb = new StringBuffer(30);  // 6+16
 		

@@ -12,7 +12,7 @@ class Contact {
 	private String birthday;
 	private String group;
 
-	public Contact(String name, String phoneNumber, String eMail, String address, int birth, String group) {
+	public Contact(String name, String phoneNumber, String eMail, String address, String birthday2, String group) {
 		this.name = name;
 		this.phonenumber = phonenumber;
 		this.email = email;
@@ -104,6 +104,11 @@ class Contact {
 	public static void main(String[] args) {
 		
 		Contact contact = new Contact();
+		
+	}
+
+	public void printInfo() { 
+		// TODO Auto-generated method stub
 		
 	}
 
