@@ -1,5 +1,7 @@
 package Test;
 
+import chapter09.BicDecimal;
+
 // Contact 클래스의 용도 ? => 데이터 저장
 // 인스턴스 생성 => 변수의 메모리 생성 => 데이터 저장
 
@@ -22,6 +24,15 @@ public class Contact {
 	private String group; // 그룹
 
 	public Contact() {
+		
+		BicDecimal bd1 = new BicDecimal("1.8");
+		BicDecimal bd2 = new BicDecimal("1.2");
+		
+		System.out.println(bd1.add(bd2));
+		System.out.println(bd1.substract(bd2));
+		System.out.println(bd1.multfly(bd2));
+		System.out.println(bd1.dvivide(bd2));
+//		System.out.println(1.8~1.2);
 
 	}
 

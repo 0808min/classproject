@@ -6,15 +6,15 @@ public class CalendarTest {
 	
 	public static void main(String[] args) {
 		
-		Calendar call = Calendar.getInstance();
+		Calendar cal1 = Calendar.getInstance();
 //		System.out.println(call);
 		
-		System.out.println(call.getTime());
-		System.out.println(call.getTimeInMillis());
+		System.out.println(cal1.getTime());
+		System.out.println(cal1.getTimeInMillis());
 		
 //		현재시간에서 1시간 증가
-		call.add(Calendar.HOUR, 1);
-		System.out.println(call.getTime());
+		cal1.add(Calendar.HOUR, 1);
+		System.out.println(cal1.getTime());
 		
 		Calendar cal2 = Calendar.getInstance();
 		Calendar cal3 = Calendar.getInstance();
@@ -25,6 +25,10 @@ public class CalendarTest {
 		
 		System.out.println(cal2.getTime());
 		System.out.println(cal3.getTime());
+		
+//		cal1 2022, cal3 2000
+		System.out.println(cal1.before(cal3));
+		System.out.println(cal1.after(cal3));
 		
 	}
 

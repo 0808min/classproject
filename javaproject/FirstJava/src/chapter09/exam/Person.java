@@ -33,23 +33,24 @@ public class Person extends Object {
 	}
 
 	public static void main(String[] args) {
-		
+
 		Person personNum1 = new Person("910808");
 		Person personNum2 = new Person("930705");
-		
+
 		System.out.println(personNum1);
 		System.out.println(personNum2);
+
 		System.out.println("-------------------------------");
-		
-		
-		if(personNum1.equals(personNum2)) {
+
+		if (personNum1.equals(personNum2)) {
 			System.out.println("같은 정보입니다.");
-			
+
 		} else {
 			System.out.println("다른 정보입니다.");
-			
+			System.out.println();
+
 		}
 
-	} 
+	}
 
 }
