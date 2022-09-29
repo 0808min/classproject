@@ -20,7 +20,7 @@ public class LinkedListTest {
 
 	static <E> void printAll(LinkedList<Integer> list) {
 
-		for (E obj : list) {
+		for (Integer obj : list) {
 			System.out.println(obj);
 
 		}

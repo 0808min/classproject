@@ -1,7 +1,6 @@
 package chapter11;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class WrapperClassTest {
 	
@@ -10,7 +9,7 @@ public class WrapperClassTest {
 		ArrayList<Integer> list = new ArrayList<>();
 		
 		list.add(10);  // 오토박싱
-		list.add(20);  
+		list.add(20);
 		list.add(30);
 		list.add(40);
 		list.add(50);
@@ -27,7 +26,7 @@ public class WrapperClassTest {
 		
 	}
 	
-	static <E> void printAll(LinkedList<Integer> list) {
+	static <E> void printAll(ArrayList<E> list) {
 		
 		for (E obj : list) {
 			System.out.println(obj);

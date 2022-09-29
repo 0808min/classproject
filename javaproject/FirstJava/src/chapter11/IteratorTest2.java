@@ -1,5 +1,6 @@
 package chapter11;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class IteratorTest2 {
@@ -14,15 +15,20 @@ public class IteratorTest2 {
 		list.add(40);
 		list.add(50);
 		
-		Iterator
-
-		printAll(list);
+//		Iterator를 이용한 일괄 처리
+		Iterator<Integer> itr = list.iterator();
+		
+		while(itr.hasNext()) {
+			Integer integer = itr.next();
+//			itr.next();
+			System.out.println(integer);
+		}
 
 	}
 
 	static <E> void printAll(LinkedList<Integer> list) {
 
-		for (E obj : list) {
+		for (Integer obj : list) {
 			System.out.println(obj);
 
 		}
