@@ -44,7 +44,7 @@ public class CollectionsTest {
 		printAll(lottoNumber);
 
 		List<Integer> list1 = Collections.emptyList();
-		System.out.println("리스트 요소의 개수 : " + list1.size());
+		System.out.println("리스트 요소의 개수 : " + lottoNumber.size());
 
 	}
 
