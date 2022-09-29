@@ -14,8 +14,8 @@ public class Exam1Main {
 //		정상적인 영문자와 숫자로만 이루어진 값을 입력했는지 확인하는 프로그램을 만들어봅시다.
 //		'a' <= c <= 'z' || 'A' <= c <= 'Z' || '0' <= c <= '9'
 
-		String str = "abc12ABC";
-		boolean chk1 = Pattern.matches("^[a-z0-9A-Z]*$", str); // 영문자와 숫자의 조합으로 된 패턴
+		String str = "1";
+		boolean chk1 = Pattern.matches("^\\d{3}-\\d{4}-d{4}", str); // 영문자와 숫자의 조합으로 된 패턴
 		System.out.println(chk1);
 
 		try {
@@ -39,9 +39,9 @@ public class Exam1Main {
 //		\w : 알파벳 + 숫자
 //		\d : [0-9]
 //		\n \t
-
+		
 	}
-
+	
 
 
 }
