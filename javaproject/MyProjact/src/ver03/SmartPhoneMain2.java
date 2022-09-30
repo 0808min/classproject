@@ -33,7 +33,6 @@ public class SmartPhoneMain2 {
 				return;
 			}
 		}
-
 	}
 
 	static void printMenu() {
