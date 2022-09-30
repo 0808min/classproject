@@ -1,6 +1,6 @@
 package chapter11.exam;
 
-public class FootballPlayer2 {
+public class FootballPlayer2 implements Comparable<FootballPlayer2> {
 
 	private String name;
 	private int number;
@@ -48,24 +48,37 @@ public class FootballPlayer2 {
 	public void setAge(int age) {
 		this.age = age;
 	}
+
 	@Override
 	public int hashCode() {
 		return age;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
-		
+
 		boolean result = false;
-		
-		if(obj != null && obj instanceof FootballPlayer2) {
-			
+
+		if (obj != null && obj instanceof FootballPlayer2) {
+
 			FootballPlayer2 player = (FootballPlayer2) obj;
 //			팀과 이름 그리고 나이가 같으면
-			result = team.equals(player.getTeam())
-					&& name.equals(player.getName())
-					&& age==player.getAge();
+			result = team.equals(player.getTeam()) && name.equals(player.getName()) && age == player.getAge();
 		}
-		
+
+		return result;
+	}
+
+	@Override
+	public int compareTo(FootballPlayer2 o) {
+//		팀이름 -> 선수이름 -> 등번호
+		int result = team.compareTo(o.getTeam());
+		if (result == 0) {
+			result = name.compareTo(o.getName());
+			if (result == 0) {
+				result = number - o.getNumber();
+			}
+		}
 		return result;
 	}
 
@@ -73,12 +86,10 @@ public class FootballPlayer2 {
 	public String toString() {
 		return "FootballPlayer2 [name=" + name + ", number=" + number + ", team=" + team + ", age=" + age + "]";
 	}
-	
+
 //	현재 클래스의 기능 테스트용
 	public static void main(String[] args) {
-		
-		
-		
+
 	}
 
 }

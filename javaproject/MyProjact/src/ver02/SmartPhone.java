@@ -63,7 +63,7 @@ public class SmartPhone {
 				break;
 			}
 		}
-		
+		 
 		if(searchIndex<0) {
 			System.out.println("찾으시는 데이터가 존재하지않습니다.");
 			return;
@@ -126,21 +126,6 @@ public class SmartPhone {
 		
 		System.out.println("정보가 수정되었습니다.");
 		System.out.println();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 	}
