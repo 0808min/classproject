@@ -20,14 +20,11 @@ public class Exam2Main {
 			num = sc.nextInt(); // <- 예외처리 포인트
 		} catch (InputMismatchException e) {
 			System.out.println("num = " + num);
-			
+
 			System.out.println("예외발생");
 			System.out.println("정상적인 숫자를 입력해주세요.");
 		}
-		
-		
 
 	}
-	
 
 }
