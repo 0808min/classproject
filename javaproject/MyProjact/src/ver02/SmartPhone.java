@@ -2,6 +2,9 @@ package ver02;
 
 import java.util.Scanner;
 
+import ver03.CoampanyContact;
+import ver03.CustomerContact;
+
 public class SmartPhone {
 	
 	// 기능 클래스 : 속성을 가지지 않고 메소드들로만 정의된 클래스
@@ -124,6 +127,17 @@ public class SmartPhone {
 			contact.setGroup(newGroup);
 		}
 		
+
+		
+		if(contact instanceof CompanyContact) {
+			
+			CompanyContact companyContact = (CompanyContact)contact;
+			
+			
+		} else if(contact instanceof CompanyContact) {
+			
+		}
+		
 		System.out.println("정보가 수정되었습니다.");
 		System.out.println();
 		
@@ -221,11 +235,19 @@ public class SmartPhone {
 		// 1. 데이터 받고
 		// 2. 인스턴스 생성
 		// 3. 배열에 인스턴스의 참조값을 저장
-		
 		if(numOfContact==contacts.length) {
 			System.out.println("최대 저장 개수는 " + contacts + "개 입니다.");
 			return;
 		}
+		System.out.println("입력하고자하는 친구 타입을 선택해주세요.");
+		System.out.println("1. 회사동료\t 2. 거래처");
+		
+		int select = Integer.parseInt(sc.nextLine());
+		
+		
+		
+	
+	
 		
 		String name = null;
 		String phoneNumber = null;
@@ -256,19 +278,39 @@ public class SmartPhone {
 		System.out.print("그룹 >");
 		group = sc.nextLine();
 		
-		//  2. 인스턴스 생성
-		Contact contact = new Contact(
-				name, 
-				phoneNumber, 
-				email, 
-				address, 
-				birthday, 
-				group);
+		Contact contact = null;
 		
-		// 배열에 저장
-		// 처음 입력 : numOfContact => 0
+		
+//		분기 1. 회사 2. 거래처
+		if(select == 1) {
+//			CompanyContact 인스턴스 생성
+			
+			System.out.println("회사이름 >> ");
+			String company = sc.nextLine();
+			System.out.println("부서이름 >> ");
+			String division = sc.nextLine();
+			System.out.println("직급 >> ");
+			String manager = sc.nextLine();
+			
+//			CustomerContact 인스턴스 생성
+			contact = new CoampanyContact(
+					);
+			
+		} else {
+			
+			System.out.println("거래처 이름 >> ");
+			String company = sc.nextLine();
+			System.out.println("거래품목 >> ");
+			Stirng product = sc.nextLine();
+			System.out.println("담당자 >> ");
+			String manager = sc.nextLine();
+
+		}
+		
+	
+		
 		contacts[numOfContact++] = contact;
-		//numOfContact++;
+//		//numOfContact++;
 		
 	}
 	
