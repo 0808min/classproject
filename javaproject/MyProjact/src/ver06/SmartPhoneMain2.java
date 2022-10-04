@@ -1,12 +1,13 @@
 package ver06;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class SmartPhoneMain2 {
 
 	public static void main(String[] args) {
 
 		SmartPhone sp = SmartPhone.getInstance();
-		
-		
 
 		while (true) {
 
@@ -28,14 +29,25 @@ public class SmartPhoneMain2 {
 				sp.deleteContact();
 				break;
 			case 5:
-				sp.printAllData();			
+				sp.printAllData();
 				break;
 			case 6:
 				System.out.println("프로그램을 종료합니다.");
 				return;
-				
-				
+
 			}
+			
+			int num = 7;
+
+			try {
+				Scanner sc = null;
+				int num1 = sc.nextInt(); // 예외처리 포인트
+			} catch (InputMismatchException e) {
+				System.out.println("예외발생 ");
+				System.out.println("정상적인 숫자를 입력해주세요");
+
+			}
+			System.out.println("num = " + num);
 		}
 
 	}
@@ -51,8 +63,8 @@ public class SmartPhoneMain2 {
 		System.out.println("6. 프로그램 종료");
 		System.out.println("==========================");
 		System.out.println("원하시는 메뉴 번호를 입력해주세요.");
+		
+		
 	}
-	
-	
 
 }
