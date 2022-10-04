@@ -16,7 +16,8 @@ public class Chapter10 {
 
 			try {
 				if (!(score >= 0 && score <= 100)) {
-					throw new Exception("입력한 점수는 정상범위에 점수가 아닙니다.");
+				throw new Test10(score);  
+//				throw new Exception("입력한 점수는 정상범위에 점수가 아닙니다.");
 				}
 				System.out.println("국어점수는 : " + score + "점 입니다.");
 				break;
