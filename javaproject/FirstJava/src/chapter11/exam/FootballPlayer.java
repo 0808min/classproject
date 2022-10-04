@@ -55,11 +55,6 @@ public class FootballPlayer implements Comparable<FootballPlayer> {
 	}
 
 	@Override
-	public String toString() {
-		return "FootballPlayer [name=" + name + ", number=" + number + ", team=" + team + ", age=" + age + "]";
-	}
-
-	@Override
 	public int compareTo(FootballPlayer f) {
 		int compare = this.name.compareTo(f.getName());
 		if (compare == 0) {
@@ -67,6 +62,11 @@ public class FootballPlayer implements Comparable<FootballPlayer> {
 		}
 		return compare;
 
+	}
+
+	@Override
+	public String toString() {
+		return "FootballPlayer [name=" + name + ", number=" + number + ", team=" + team + ", age=" + age + "]";
 	}
 
 }
