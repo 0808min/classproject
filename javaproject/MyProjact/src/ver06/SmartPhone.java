@@ -1,6 +1,8 @@
 package ver06;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class SmartPhone {
 
@@ -367,7 +369,7 @@ public class SmartPhone {
 				} else {
 					break;
 				}
-				
+
 			} else {
 				System.out.println("공백은 허용하지 않습니다. 정상적인 문자를 입력하세요");
 			}
