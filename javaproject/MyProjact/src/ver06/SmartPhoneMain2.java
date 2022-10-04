@@ -37,17 +37,6 @@ public class SmartPhoneMain2 {
 
 			}
 			
-			int num = 7;
-
-			try {
-				Scanner sc = null;
-				int num1 = sc.nextInt(); // 예외처리 포인트
-			} catch (InputMismatchException e) {
-				System.out.println("예외발생 ");
-				System.out.println("정상적인 숫자를 입력해주세요");
-
-			}
-			System.out.println("num = " + num);
 		}
 
 	}

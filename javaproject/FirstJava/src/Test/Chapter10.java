@@ -9,10 +9,11 @@ public class Chapter10 {
 //		throw new Exception("강제적 예외발생");
 		Scanner sc = new Scanner(System.in);
 
+		
+		while (true) {
 		System.out.println("국어 점수를 입력하세요. >> ");
 		int score = sc.nextInt();
 
-		while (true) {
 			try {
 				if (!(score >= 0 && score <= 100)) {
 					throw new Exception("입력한 점수는 정상범위에 점수가 아닙니다.");
@@ -25,5 +26,4 @@ public class Chapter10 {
 			}
 		}
 	}
-
 }
