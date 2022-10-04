@@ -10,7 +10,7 @@ public class SmartPhoneMain2 {
 		SmartPhone sp = SmartPhone.getInstance();
 
 		while (true) {
-
+try {
 			printMenu();
 
 			int select = Integer.parseInt(sp.sc.nextLine());
@@ -37,8 +37,10 @@ public class SmartPhoneMain2 {
 
 			}
 			
+		}catch(InputMismatchException e) {
+			System.out.println("잘못된 값을 입력하였습니다");	
 		}
-
+		}
 	}
 
 	static void printMenu() {
