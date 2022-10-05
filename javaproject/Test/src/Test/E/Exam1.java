@@ -54,7 +54,10 @@ public class Exam1 {
 		System.out.println("=============================================");
 		System.out.print(korTotal + "\t" + engTotal + "\t" + matTotal);
 		System.out.println();
-		System.out.print((float)korTotal/scores.length + "\t" + (float)engTotal/scores.length + "\t" + (float)matTotal/scores.length);
+		System.out.print(
+				(float)korTotal/scores.length + "\t" + 
+		        (float)engTotal/scores.length + "\t" + 
+				(float)matTotal/scores.length);
 		
 	}
 }
