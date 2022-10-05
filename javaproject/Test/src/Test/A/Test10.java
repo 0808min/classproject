@@ -1,4 +1,4 @@
-package Test;
+package Test.A;
 
 public class Test10 extends Exception {
 	

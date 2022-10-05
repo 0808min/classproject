@@ -1,4 +1,4 @@
-package Test;
+package Test.B;
 
 public interface MyInterface<T1, T2> {
 	
