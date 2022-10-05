@@ -1,6 +1,5 @@
 package Test;
 
-
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -17,8 +16,8 @@ public class LinkedListTest {
 		list.add(50);
 
 		Iterator<Integer> itr = list.iterator();
-		
-		while(itr.hasNext()) {
+
+		while (itr.hasNext()) {
 			Integer integer = itr.next();
 			System.out.println(integer);
 		}
