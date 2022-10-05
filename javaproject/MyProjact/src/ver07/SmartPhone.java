@@ -6,21 +6,21 @@ import java.util.Scanner;
 
 public class SmartPhone {
 
-	// 기능 클래스 : 속성을 가지지 않고 메소드들로만 정의된 클래스
-	// 여러개의 인스턴스가 생성될 필요 없다! => 싱글톤 패턴
-	// 1. private 생성자
-	// 2. 클래스 내부에서 인스턴스를 생성 static private
-	// 3. 내부에서 생성한 참조값을 반환 해주는 메소드 static public
+//	기능 클래스 : 속성을 가지지 않고 메소드들로만 정의된 클래스
+//	여러개의 인스턴스가 생성될 필요 없다! => 싱글톤 패턴
+//	1. private 생성자
+//	2. 클래스 내부에서 인스턴스를 생성 static private
+//	3. 내부에서 생성한 참조값을 반환 해주는 메소드 static public
 
-	// 요구사항
-	// 이 클래스는 연락처 정보를 관리하는 클래스입니다.
-	// ① Contact 클래스의 인스턴스 10개를 저장 할 수 있는 배열을 정의합시다.
-	// => 10개 정보를 저장할수 있다. -> 배열 인스턴스를 생성 Contact[]
-	// Contact 클래스 기반의 인스턴스를 최대 10개까지 만들어서 배열에 참조값을 저장
+//	요구사항
+//	이 클래스는 연락처 정보를 관리하는 클래스입니다.
+//	① Contact 클래스의 인스턴스 10개를 저장 할 수 있는 배열을 정의합시다.
+//	=> 10개 정보를 저장할수 있다. -> 배열 인스턴스를 생성 Contact[]
+//	Contact 클래스 기반의 인스턴스를 최대 10개까지 만들어서 배열에 참조값을 저장
 
 //	private Contact[] contacts;
 //	private int numOfContact; // 입력된 정보의 개수, 배열의 index 값으로 사용
-	
+
 	List<Contact> contacts;
 	Scanner sc;
 
@@ -39,25 +39,23 @@ public class SmartPhone {
 		}
 		return sp;
 	}
-	
-	
 
-	// ② 기능
-	// 배열에 인스턴스를 저장하고,
-	// 수정하고 ( 이름 으로 검색 ),
-	// 삭제 ( 이름 으로 검색 ),
-	// 검색 후 결과 출력 ( 이름 으로 검색 ),
-	// 저장된 데이터의 리스트를 출력하는 메소드를 정의합니다.
+//	② 기능
+//	배열에 인스턴스를 저장하고,
+//	수정하고 ( 이름 으로 검색 ),
+//	삭제 ( 이름 으로 검색 ),
+//	검색 후 결과 출력 ( 이름 으로 검색 ),
+//	저장된 데이터의 리스트를 출력하는 메소드를 정의합니다.
 
-	// 이름을 입력받고 배열에 해당 이름의 Contact 객체가 있는 index 반환
+//	이름을 입력받고 배열에 해당 이름의 Contact 객체가 있는 index 반환
 	private int getIndex() {
 
 		String name = sc.nextLine();
 
-		// 이름 검색 하는 index 찾아야한다
+//		이름 검색 하는 index 찾아야한다
 		int searchIndex = -1; // 현재 검색의 결과는 없다
 
-		// 데이터 찾기
+//		데이터 찾기
 		for (int i = 0; i < contacts.size(); i++) {
 			if (contacts.get(i).getName().equals(name)) {
 				searchIndex = i;
@@ -69,10 +67,10 @@ public class SmartPhone {
 
 	}
 
-	// 이름 검색후 데이터 수정
+//	이름 검색후 데이터 수정
 	void editContact() {
 
-		// 검색어 받기
+//		검색어 받기
 		System.out.println("데이터 수정이 진행됩니다.");
 		System.out.print("수정하고자 하는 이름을 입력해주세요 >");
 
@@ -90,8 +88,8 @@ public class SmartPhone {
 		System.out.println("변경하고자하는 이름을 입력해주세요.(현재값: " + contact.getName() + ")\n" + "변경하지않으려면 엔터를치세요 >");
 		String newName = sc.nextLine();
 
-		// " abc " -> "abc"
-		// " "
+//		" abc " -> "abc"
+//		" "
 		if (newName != null && newName.trim().length() > 0) {
 			contact.setName(newName);
 		}
@@ -182,32 +180,32 @@ public class SmartPhone {
 
 	}
 
-	// 삭제 ( 이름 으로 검색 ),
+//	삭제 ( 이름 으로 검색 ),
 	void deleteContact() {
 
-		// 검색어 받기
+//		검색어 받기
 		System.out.println("데이터 삭제가 진행됩니다.");
 		System.out.print("삭제하고자 하는 이름을 입력해주세요 >");
 
 		int searchIndex = getIndex();
 
-		// 검색한 index 값으로 분기 : 시프트를 하거나 검색 결과 이름이 존재하지 않는다!
+//		검색한 index 값으로 분기 : 시프트를 하거나 검색 결과 이름이 존재하지 않는다!
 		if (searchIndex < 0) {
 			System.out.println("삭제하고자하는 이름의 데이터가 존재하지않습니다.");
 		} else {
-			
+
 			contacts.remove(searchIndex);
 			System.out.println("데이터가 삭제되었습니다.");
 		}
 
 	}
 
-	// 검색 후 결과 출력 ( 이름 으로 검색 )
+//	검색 후 결과 출력 ( 이름 으로 검색 )
 	void searchInfoPrint() {
 
-		// 1. 사용자에게 검색할 키워드 입력받는다!
-		// 2. 배열에서 이름 검색
-		// 3. 결과 출력 : "검색한 이름의 정보가 없습니다."
+//		1. 사용자에게 검색할 키워드 입력받는다!
+//		2. 배열에서 이름 검색
+//		3. 결과 출력 : "검색한 이름의 정보가 없습니다."
 
 		String name = null; // 검색할 이름
 
@@ -217,20 +215,19 @@ public class SmartPhone {
 		int searchIndex = getIndex();
 		Contact contact = null;
 
-		// 3. 결과 출력 : "검색한 이름의 정보가 없습니다."
+//		3. 결과 출력 : "검색한 이름의 정보가 없습니다."
 		System.out.println("검색의 결과 ===============");
 		if (contact == null) {
 			System.out.println("검색한 이름 " + name + " 의 정보가 없습니다.");
 		} else {
 			contacts.get(searchIndex).printInfo();
-			
-			
+
 		}
 	}
 
-	// 전체 입력 데이터의 출력
+//	전체 입력 데이터의 출력
 	void printAllData() {
-		// 배열에 저장된 데이터를 모두 출력
+//	배열에 저장된 데이터를 모두 출력
 
 		System.out.println("전체 데이터를 출력합니다. ==============");
 
@@ -244,20 +241,20 @@ public class SmartPhone {
 		}
 	}
 
-	// 친구정보 입력
+//	친구정보 입력
 	void insertContact() {
-		// 배열에 인스턴스를 저장하고,
-		// 1. 데이터 받고
-		// 2. 인스턴스 생성
-		// 3. 배열에 인스턴스의 참조값을 저장
+//		배열에 인스턴스를 저장하고,
+//		1. 데이터 받고
+//		2. 인스턴스 생성
+//		3. 배열에 인스턴스의 참조값을 저장
 
 		if (contacts.size() == 10) {
 			System.out.println("최대 저장 개수는 10개 입니다.");
 			return;
 		}
 
-		// 회사 친구 입력 ?
-		// 거래처 정보 입력
+//		회사 친구 입력 
+//		거래처 정보 입력
 
 		System.out.println("입력하고자하는 친구 타입을 선택해주세요.");
 		System.out.println("1. 회사 동료 \t 2. 거래처");
@@ -270,7 +267,7 @@ public class SmartPhone {
 		String birthday = null;
 		String group = null;
 
-		// 1. 데이터 받고
+//		1. 데이터 받고
 		System.out.println("입력을 시작합니다.");
 
 		System.out.print("이름 > ");
@@ -293,9 +290,9 @@ public class SmartPhone {
 
 		Contact contact = null;
 
-		// 분기 1. 회사 2. 거래처
+//		분기 1. 회사 2. 거래처
 		if (select == 1) {
-			// CompanyContact 인스턴스 생성
+//		CompanyContact 인스턴스 생성
 
 			System.out.println("회사이름 >> ");
 			String company = getString();
@@ -303,14 +300,13 @@ public class SmartPhone {
 			String division = getString();
 			System.out.println("직급 >>");
 			String manager = getString();
-			
 
-			// 2. 인스턴스 생성
+//		2. 인스턴스 생성
 			contact = new CompanyContact(name, phoneNumber, email, address, birthday, group, company, division,
 					manager);
 
 		} else {
-			// CustomerContact 인스턴스 생성
+//		 CustomerContact 인스턴스 생성
 
 			System.out.println("거래처 이름 >>");
 			String company = getString();
@@ -319,7 +315,7 @@ public class SmartPhone {
 			System.out.println("담당자 >>");
 			String manager = getString();
 
-			// 2. 인스턴스 생성
+//		2. 인스턴스 생성
 			contact = new CustomerContact(name, phoneNumber, email, address, birthday, group, company, product,
 					manager);
 		}
@@ -328,7 +324,7 @@ public class SmartPhone {
 //		처음 입력 : numOfContact => 0
 //		contacts[numOfContact++] = contact;
 //		numOfContact++;
-		
+
 		contacts.add(contact);
 
 	}
@@ -376,7 +372,7 @@ public class SmartPhone {
 				} else {
 					break;
 				}
-				
+
 			} else {
 				System.out.println("공백은 허용하지 않습니다. 정상적인 문자를 입력하세요");
 			}
@@ -387,8 +383,6 @@ public class SmartPhone {
 
 //	전화번호를 받아서 중복된 전화번호가 있ㅎ는지 체크, 중복되지 않는 전화번호를 받아서 반환
 	private String getPhoneNumber() {
-
-	
 
 		String phoneNumber = null;
 
@@ -423,7 +417,4 @@ public class SmartPhone {
 		return phoneNumber;
 	}
 
-	
 }
-		
-	
