@@ -56,7 +56,7 @@ public class PersonExam7 {
 		int curYear = LocalDate.now().getYear();
 		
 		PersonExam7 p = new PersonExam7("주경진", "930705-2000000");
-		p.printInfo();
+		
 	}
 
 }
