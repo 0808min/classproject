@@ -8,14 +8,12 @@ public class FileWriterTest {
 	
 	public static void main(String[] args) {
 		
-		String str = "PARK";
 		char ch = 'A';
 		char[] charArr = {'B', 'C', 'D'};
 		
 		try {
 			Writer writer = new FileWriter("c:\\Test\\text1.txt");
 			
-			writer.write(str);
 			writer.write(ch);
 			writer.write(charArr);
 			
