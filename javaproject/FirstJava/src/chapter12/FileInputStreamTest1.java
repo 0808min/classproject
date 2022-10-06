@@ -12,7 +12,7 @@ public class FileInputStreamTest1 {
 		FileInputStream in = null;
 
 		try {
-			in = new FileInputStream("C:\\Test\\testfile1.txt");
+			in = new FileInputStream("C:\\Test\\testfile5.txt");
 			
 			int data = in.read();
 			System.out.println(data);
