@@ -7,7 +7,7 @@ public class URLtest {
 	
 	public static void main(String[] args) {
 		
-		String urlStr = "http://cafe.naver.com/main/read.nhn?mode=LS2D&mid=sec&sid1=105&sid2=228&oid=584&aid=";
+		String urlStr = "http://cafe.naver.com/main/article/111/read.nhn?mode=LS2D&mid=sec&sid1=105&sid2=228&oid=584&aid=";
 		
 		try {
 			
@@ -19,6 +19,7 @@ public class URLtest {
 			System.out.println(url.getDefaultPort());
 			System.out.println(url.getPath());
 			System.out.println(url.getQuery());
+			System.out.println(url.getFile());
 			
 			
 		} catch (MalformedURLException e) {
