@@ -2,11 +2,12 @@ package chapter15;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class URLConnectionTest {
+public class HttpURLConnectionTest {
 
 	public static void main(String[] args) {
 
@@ -15,18 +16,12 @@ public class URLConnectionTest {
 		try {
 			URL url = new URL(urlStr);
 
-			URLConnection connection = url.openConnection();
+			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
 			InputStream in = connection.getInputStream();
 
-			while (true) {
-				int data = in.read();
-
-				if (data == -1) {
-					break;
-				}
-
-				System.out.print((char) data);
+			for(int i=1; i<=8; i++) {
+				System.out.println(connection.getHeaderFieldKey(i) + " = " + connection.getHeaderField(i));
 			}
 
 		} catch (MalformedURLException e) {
