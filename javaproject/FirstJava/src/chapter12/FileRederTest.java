@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.Reader;
 
 public class FileRederTest {
-	
+
 	public static void main(String[] args) {
 		
 		char[] buf = new char[10];
@@ -15,10 +15,12 @@ public class FileRederTest {
 		Reader reader = null;
 		
 		try {
-			reader = new FileReader("C:\\test\\testfile1.txt");
+			reader = new FileReader("c:\\test\\text1.txt");
 			
 			while(true) {
+				
 				readCnt = reader.read(buf);
+				
 				if(readCnt == -1) {
 					break;
 				}
@@ -27,13 +29,8 @@ public class FileRederTest {
 				
 				
 			}
-				
-				
-				
-				
 			
 			
-		
 			
 			
 		} catch (FileNotFoundException e) {
@@ -42,9 +39,21 @@ public class FileRederTest {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			if(reader != null) {
+				
+				try {
+					reader.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
 		}
 		
 		
+
 	}
 
 }

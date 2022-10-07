@@ -5,30 +5,32 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class BufferedWriterTest {
-	
+
 	public static void main(String[] args) {
 		
-		BufferedWriter out = null;
+		//BufferedWriter out = null;
 		
-		try {
-			out = new BufferedWriter(new FileWriter("C:\\Test\\testfile1.txt"));
+		try(BufferedWriter out = new BufferedWriter(new FileWriter("c:\\test\\text2.txt"));) {
+			//out = new BufferedWriter(new FileWriter("c:\\test\\text2.txt"));
 			
-			out.write("구글과 넷플릭스에 이어 세계 최대 게임방송 플랫폼으로 꼽히는 트위치까지 '망 이용료 의무 부과'에 반대하는 여론전");
+			out.write("홍차(紅茶)는 차잎 내부의 성분이 자체에 들어있는 효소에 산화되어[3] 붉은 빛을 띠는 차를 뜻한다.");
 			out.newLine();
-			out.write("나서며 국내 통신업계와 갈등이 고조되고 있다. 정치권에선 여야를 막론하고 망 이용료 의무부과를 명시한 법안 7개가 발의됐지만, 각");
+			out.write("녹차나 보이차와 같이 효소의 작용을 중지시키는 쇄청(曬靑, 햇볕에 쬐어 말림) 과정을 거치지 않기 때문에 잎 자체의 효소로 산화가 된 것이다.");
 			out.newLine();
-			out.write("당 내부에서부터 혼선이 일면서 당론에 대한 교통정리가 선행돼야 한다는 지적이 나온다");
+			out.write("한자문화권에서는 우러난 차의 빛깔(붉은색)을 보고 홍차라고 하지만, 영어에서는 찻잎의 색깔(검은색)을 보고 'Black Tea'라고 부른다.");
 			out.newLine();
 			out.newLine();
-			out.write("나무위키");
+			out.write("나무위키 참조");
 			
-			System.out.println("작성완료");
+			System.out.println("작성 완료!");
+			
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
+
 	}
 
 }

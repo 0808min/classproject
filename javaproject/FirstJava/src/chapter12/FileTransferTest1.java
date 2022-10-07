@@ -8,36 +8,34 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class FileTransferTest1 {
-	
+
 	public static void main(String[] args) {
 		
-//		파일복사
-//		특정 파일의 데이터를 읽어서 다른 위치 파일에 쓰면 ? -> 복사
+		// 파일 복사
+		// 특정 파일의 데이터를 읽어서 다른 위치에 파일에 쓰면 -> 복사
 		
-//		원본파일
+		// 원본파일
 		InputStream in = null;
+		// 복사본 파일
 		OutputStream out = null;
 		
-		int copyByte = 0; // 총 복사한 데이터 사이즈
-		int bytrDataSize = 0;
-				
 		try {
-			in = new FileInputStream("C:\\Test\\testfile2.txt");
+			in = new FileInputStream("c:\\test\\testfile2.txt");
+			out = new FileOutputStream("c:\\test\\testfile2Copy.txt");
 			
 			while(true) {
+				
 				int data = in.read();
 				
 				if(data == -1) {
 					break;
 				}
 				
-			
-				copyByte += bytrDataSize;
+				out.write(data);  // 새로운 파일에 데이터 쓰기
 				
 			}
 			
-			System.out.println("복사완료");
-			System.out.println("복사한 파일의 size : " + copyByte);
+			System.out.println("복사 완료!");
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -45,19 +43,28 @@ public class FileTransferTest1 {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		try {
-			out = new FileOutputStream("C:\\Test\\testfile2Copy.txt");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} finally {
+			
 			if(in != null) {
-				
-					
-				
+				try {
+					in.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
+			
+			if(out != null) {
+				try {
+					out.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
 		}
+		
 		
 		
 	}
