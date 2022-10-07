@@ -8,31 +8,27 @@ import java.io.Reader;
 public class FileRederTest {
 
 	public static void main(String[] args) {
-		
+
 		char[] buf = new char[10];
 		int readCnt = 0;
-		
+
 		Reader reader = null;
-		
+
 		try {
 			reader = new FileReader("c:\\test\\text1.txt");
-			
-			while(true) {
-				
+
+			while (true) {
+
 				readCnt = reader.read(buf);
-				
-				if(readCnt == -1) {
+
+				if (readCnt == -1) {
 					break;
 				}
-				
+
 				System.out.println(new String(buf));
-				
-				
+
 			}
-			
-			
-			
-			
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -40,19 +36,17 @@ public class FileRederTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			if(reader != null) {
-				
+			if (reader != null) {
+
 				try {
 					reader.close();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
+
 			}
 		}
-		
-		
 
 	}
 

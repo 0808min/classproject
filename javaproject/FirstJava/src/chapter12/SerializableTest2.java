@@ -9,31 +9,27 @@ import java.util.ArrayList;
 public class SerializableTest2 {
 
 	public static void main(String[] args) {
-		
-		
-		
+
 		ObjectInputStream inputStream = null;
-		
+
 		try {
-			
+
 			inputStream = new ObjectInputStream(new FileInputStream("instanceData.ser"));
-					
+
 			String str = (String) inputStream.readObject();
-			
-			Person p = (Person) inputStream.readObject(); 
-			
+
+			Person p = (Person) inputStream.readObject();
+
 			System.out.println(str);
-			
+
 			p.tell();
-			
+
 			ArrayList<Person> list = (ArrayList<Person>) inputStream.readObject();
-			
-			for(Person person : list) {
+
+			for (Person person : list) {
 				person.tell();
 			}
-			
-			
-			
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -43,11 +39,7 @@ public class SerializableTest2 {
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
-		
-		
-		
-		
+		}
 
 	}
 

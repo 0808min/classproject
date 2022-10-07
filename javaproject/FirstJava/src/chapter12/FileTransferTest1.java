@@ -10,33 +10,33 @@ import java.io.OutputStream;
 public class FileTransferTest1 {
 
 	public static void main(String[] args) {
-		
+
 		// 파일 복사
 		// 특정 파일의 데이터를 읽어서 다른 위치에 파일에 쓰면 -> 복사
-		
+
 		// 원본파일
 		InputStream in = null;
 		// 복사본 파일
 		OutputStream out = null;
-		
+
 		try {
 			in = new FileInputStream("c:\\test\\testfile2.txt");
 			out = new FileOutputStream("c:\\test\\testfile2Copy.txt");
-			
-			while(true) {
-				
+
+			while (true) {
+
 				int data = in.read();
-				
-				if(data == -1) {
+
+				if (data == -1) {
 					break;
 				}
-				
-				out.write(data);  // 새로운 파일에 데이터 쓰기
-				
+
+				out.write(data); // 새로운 파일에 데이터 쓰기
+
 			}
-			
+
 			System.out.println("복사 완료!");
-			
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -44,8 +44,8 @@ public class FileTransferTest1 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			
-			if(in != null) {
+
+			if (in != null) {
 				try {
 					in.close();
 				} catch (IOException e) {
@@ -53,8 +53,8 @@ public class FileTransferTest1 {
 					e.printStackTrace();
 				}
 			}
-			
-			if(out != null) {
+
+			if (out != null) {
 				try {
 					out.close();
 				} catch (IOException e) {
@@ -62,11 +62,9 @@ public class FileTransferTest1 {
 					e.printStackTrace();
 				}
 			}
-			
+
 		}
-		
-		
-		
+
 	}
 
 }
