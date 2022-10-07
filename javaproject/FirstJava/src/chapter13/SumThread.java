@@ -50,7 +50,8 @@ public class SumThread extends Thread {
 
 class Sum {
 	long sum;
-	void sum(long num) {
+//	동기화 처리 키워드
+	synchronized void sum(long num) {
 		sum += num;
 	}
 }
