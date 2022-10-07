@@ -26,6 +26,7 @@ public class MessageClient {
 
 				if (str1.equals("exit")) {
 					break;
+					
 				}
 				dout.writeUTF(str1);
 				dout.flush();
