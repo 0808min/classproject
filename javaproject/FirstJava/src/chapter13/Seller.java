@@ -12,7 +12,7 @@ public class Seller extends Thread {
 	@Override
 	public void run() {
 		product.setProduct("I phone 14");
-		System.out.println("오늘 판매하는 제품은" + product.product + "입니다.");
+		System.out.println("오늘 판매하는 제품은 " + product.product + "입니다.");
 	}
 
 }
